@@ -1,0 +1,19 @@
+<!--catalog/templates/delete_book.html-->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h4 style="margin-left: 45px"> delete the book ? </h4>
+        <hr>
+            <p style="margin-left: 45px">
+                Book Id: {{ book.id }}<br>
+                Title: {{ book.title }}<br>
+                Author: {{ book.author }}
+            </p>
+        <br>
+        <form action="" method="POST" style="margin-left: 45px">
+            <button type="submit" class="btn btn-sm btn-primary"> delete </button>
+        </form>
+    </div>
+{% endblock %}
